@@ -17,7 +17,9 @@ XML PHP Extension
 Setup this project you need to put the project with folder name loan in \xampp\htdocs if using wamp then put it in \wamp\www\
 import the database which is in root directory with the name loan.sql 
 
-Change the .env configuration based on the database connection. Now project is ready to run.
+Change the .env configuration based on the database connection. 
+Also get the POSTMAN Collection with the name of loan.json from root directory.
+Now project is ready to run.
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
