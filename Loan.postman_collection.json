@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "9bac0844-aafa-4d4a-b44a-02d63b122d5c",
+		"name": "Loan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14188775"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Anup",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Singh",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "anupsingh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Admin@123",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9716962906",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1995-07-12",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "I am a Software engineer",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Delhi",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "kJKGhSAEWSkshjkdg786278KJHJKHdg78623uighjkahjkdhjJHJKBJKBJKhouihy8374y8",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/loan/api/register",
+						"description": "localhost/zeeplive/api/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "anupsingh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Admin@123",
+									"type": "text"
+								},
+								{
+									"key": "is_admin",
+									"value": "0",
+									"description": "Admin=>1, User=>0",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/loan/api/login",
+						"description": "localhost/zeeplive/api/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loans",
+			"item": [
+				{
+					"name": "Loan Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTA5MmFlODhmZTIyNmZhNzQxOWExZTgyY2Y2MGNlOWM1NGIxYzc2ZTk0ZWNkYjIzMjZhZTI0MzNmYTc5N2MwY2Y5ZTc3Njg4OGE1Y2M0ZGEiLCJpYXQiOiIxNjYyNTc1MjQyLjMxMDQyMSIsIm5iZiI6IjE2NjI1NzUyNDIuMzEwNDI5IiwiZXhwIjoiMTY5NDExMTI0Mi4yNTY1NDUiLCJzdWIiOiIzMCIsInNjb3BlcyI6W119.NpXqi6kDVLp2SaeSiVC-kUvMlXzUYilOGlraChE5UcWq8khd5pK6po0VL3vTKZ6uDZY0Lj8hJKZrUpSbiI6Q6gJYVxAQSFNaY7ogdwgI5E--O6kjSOQ4XNHzGx1OJtwWUcKo4fgE-r9dIpamf6r6jkmqlPSQR6fR3vwbTXSQ606hr34x7BG9xAgT8HLgP7HpBGqItRPk3S9rl2ppAAVR0nVRfgWHtTIcQczUJ3xPWi468noAcNJBSNc5TBHXp5C9GQG7jJSYU23d7EOPyX-u8GlB76P_T3DqqzvajJQaHWXQIPffoavMxI5O0rrD_3XwL564uvz0hbx96XWT-hYyxTgYW1UBvhwyALNmny6twZkWzIPyqIpcqdFM6WDE0E3gBXCCXsDiGAFLQf5Q6mmP7MFNjxdHN3s7UdaWO38dfiLqk10QgBacMXNu36t2p_jCbIAUyTQlZcClbi0vLWj2nSEGKPR_PtFjsGJ2e8ET4osbc5olsLzEDiJ_VRkFcLrHIcVhihs-XUFjvUUrenOVpK-OZnacGUe6_Vru2fcMxfcChCjwj3u6FPTBFD2SPYAwoBdMWsCQqoRK_mfdyyFMvQ2fMOg4V_10aB79jmReIW2bPMxDKQlGBCpugQ-VX2_jx2mOuPAojMpbWky9o1UPJL2W9Z7qIr0UCK_4Of6PGCk"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "net_monthly_salary",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "loan_ammount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "loan_term",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "repay_duration_type",
+									"value": "1",
+									"description": "1=>Weekly, 2=>Monthly, 3=>Yearly",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/loan/api/loan-request"
+					},
+					"response": []
+				},
+				{
+					"name": "My Loan List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTA5MmFlODhmZTIyNmZhNzQxOWExZTgyY2Y2MGNlOWM1NGIxYzc2ZTk0ZWNkYjIzMjZhZTI0MzNmYTc5N2MwY2Y5ZTc3Njg4OGE1Y2M0ZGEiLCJpYXQiOiIxNjYyNTc1MjQyLjMxMDQyMSIsIm5iZiI6IjE2NjI1NzUyNDIuMzEwNDI5IiwiZXhwIjoiMTY5NDExMTI0Mi4yNTY1NDUiLCJzdWIiOiIzMCIsInNjb3BlcyI6W119.NpXqi6kDVLp2SaeSiVC-kUvMlXzUYilOGlraChE5UcWq8khd5pK6po0VL3vTKZ6uDZY0Lj8hJKZrUpSbiI6Q6gJYVxAQSFNaY7ogdwgI5E--O6kjSOQ4XNHzGx1OJtwWUcKo4fgE-r9dIpamf6r6jkmqlPSQR6fR3vwbTXSQ606hr34x7BG9xAgT8HLgP7HpBGqItRPk3S9rl2ppAAVR0nVRfgWHtTIcQczUJ3xPWi468noAcNJBSNc5TBHXp5C9GQG7jJSYU23d7EOPyX-u8GlB76P_T3DqqzvajJQaHWXQIPffoavMxI5O0rrD_3XwL564uvz0hbx96XWT-hYyxTgYW1UBvhwyALNmny6twZkWzIPyqIpcqdFM6WDE0E3gBXCCXsDiGAFLQf5Q6mmP7MFNjxdHN3s7UdaWO38dfiLqk10QgBacMXNu36t2p_jCbIAUyTQlZcClbi0vLWj2nSEGKPR_PtFjsGJ2e8ET4osbc5olsLzEDiJ_VRkFcLrHIcVhihs-XUFjvUUrenOVpK-OZnacGUe6_Vru2fcMxfcChCjwj3u6FPTBFD2SPYAwoBdMWsCQqoRK_mfdyyFMvQ2fMOg4V_10aB79jmReIW2bPMxDKQlGBCpugQ-VX2_jx2mOuPAojMpbWky9o1UPJL2W9Z7qIr0UCK_4Of6PGCk"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/loan/api/my-loan-list",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loan",
+								"api",
+								"my-loan-list"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EMI Repayment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGYxYzk4ZjVjZjc4MjM4YzcyMWI1YzliOTc4MGNmMmFlMjU0NDhiMDEwYzQ4YmYxNzRkODUzZjAyNmQyMjJmOTM4MWE4ZTQ5NGQwYTc4ZWQiLCJpYXQiOiIxNjYyNTQ2OTMyLjg1NDMyNSIsIm5iZiI6IjE2NjI1NDY5MzIuODU0MzM0IiwiZXhwIjoiMTY5NDA4MjkzMi44MzQ3MTkiLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.fIRoxBT1FzneHF6W0_lSzTIGhq64OVAGS6FQwvikvk57fNbK8IAZ4u8jvWLGGdd4rVEGG-OvxGdfAOW2vt0M1LlJeIPb22cMOyQKLLsnrb4spHusS9y5XCHv5xP3Np6hk3tym-vOiQx_QTuQu1DElP7pPKrjtqY8cdDTtfXZT9lxQ8YnJ5Y539GxzECKChNGdSR75touFJIHd9oQZSEUY0XLRBfPMEIDREVmi0hTXUuQCjS-sMhuQ9bJRsI-vqZzV_L3k0_OUJ1IH3CtWXNYu0yEqKlj8Ft_S4-eVwOLBgrYeOagnvB5SAwgoQNZq7GmNUHn6yIHNRo7im-HgAU8XvKR0bXRDqFUiyB8SdeuPvTcj6Dwwd4w3Sp7kErBsGwtCCkH13VWOJ31j45ROteFB7ezfzV925X44ynBzeM9uH5DY87gkMsLCz-yfA4LMjf_1mHFGzmVS3Fc02GIIcrcyJQzVS6Nk1eXskOlLXDfw3S24NwhruclwecH6OqFusZOQyuQ-UydwHfPP_zC8TYPrIxMj4sMkcc-ghUmnnc_DJ7llFfx10DNQaHgKI6hGhjqz3f0pmPGPjAqRBdGmDiC1ekmk8GhLPG5S1Ku1-Aa8OYOSnn_nes9rViTM-Va4zXGIzSoWysgEJOOecnZtMilL14qrZT__FIHgpugmx2mlGk"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost/loan/api/repay-loan-emi?loan_id=3&ammount=3334",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loan",
+								"api",
+								"repay-loan-emi"
+							],
+							"query": [
+								{
+									"key": "loan_id",
+									"value": "3"
+								},
+								{
+									"key": "ammount",
+									"value": "3334"
+								}
+							]
+						},
+						"description": "repayment with amount greater or equal to the scheduled repayment"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@loan.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Admin@123",
+									"type": "text"
+								},
+								{
+									"key": "is_admin",
+									"value": "1",
+									"description": "Admin=>1, User=>0",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost/loan/api/login",
+						"description": "localhost/zeeplive/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Unapproved loan list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGYxYzk4ZjVjZjc4MjM4YzcyMWI1YzliOTc4MGNmMmFlMjU0NDhiMDEwYzQ4YmYxNzRkODUzZjAyNmQyMjJmOTM4MWE4ZTQ5NGQwYTc4ZWQiLCJpYXQiOiIxNjYyNTQ2OTMyLjg1NDMyNSIsIm5iZiI6IjE2NjI1NDY5MzIuODU0MzM0IiwiZXhwIjoiMTY5NDA4MjkzMi44MzQ3MTkiLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.fIRoxBT1FzneHF6W0_lSzTIGhq64OVAGS6FQwvikvk57fNbK8IAZ4u8jvWLGGdd4rVEGG-OvxGdfAOW2vt0M1LlJeIPb22cMOyQKLLsnrb4spHusS9y5XCHv5xP3Np6hk3tym-vOiQx_QTuQu1DElP7pPKrjtqY8cdDTtfXZT9lxQ8YnJ5Y539GxzECKChNGdSR75touFJIHd9oQZSEUY0XLRBfPMEIDREVmi0hTXUuQCjS-sMhuQ9bJRsI-vqZzV_L3k0_OUJ1IH3CtWXNYu0yEqKlj8Ft_S4-eVwOLBgrYeOagnvB5SAwgoQNZq7GmNUHn6yIHNRo7im-HgAU8XvKR0bXRDqFUiyB8SdeuPvTcj6Dwwd4w3Sp7kErBsGwtCCkH13VWOJ31j45ROteFB7ezfzV925X44ynBzeM9uH5DY87gkMsLCz-yfA4LMjf_1mHFGzmVS3Fc02GIIcrcyJQzVS6Nk1eXskOlLXDfw3S24NwhruclwecH6OqFusZOQyuQ-UydwHfPP_zC8TYPrIxMj4sMkcc-ghUmnnc_DJ7llFfx10DNQaHgKI6hGhjqz3f0pmPGPjAqRBdGmDiC1ekmk8GhLPG5S1Ku1-Aa8OYOSnn_nes9rViTM-Va4zXGIzSoWysgEJOOecnZtMilL14qrZT__FIHgpugmx2mlGk"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/loan/api/unapproved-loan-requested-list"
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGYxYzk4ZjVjZjc4MjM4YzcyMWI1YzliOTc4MGNmMmFlMjU0NDhiMDEwYzQ4YmYxNzRkODUzZjAyNmQyMjJmOTM4MWE4ZTQ5NGQwYTc4ZWQiLCJpYXQiOiIxNjYyNTQ2OTMyLjg1NDMyNSIsIm5iZiI6IjE2NjI1NDY5MzIuODU0MzM0IiwiZXhwIjoiMTY5NDA4MjkzMi44MzQ3MTkiLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.fIRoxBT1FzneHF6W0_lSzTIGhq64OVAGS6FQwvikvk57fNbK8IAZ4u8jvWLGGdd4rVEGG-OvxGdfAOW2vt0M1LlJeIPb22cMOyQKLLsnrb4spHusS9y5XCHv5xP3Np6hk3tym-vOiQx_QTuQu1DElP7pPKrjtqY8cdDTtfXZT9lxQ8YnJ5Y539GxzECKChNGdSR75touFJIHd9oQZSEUY0XLRBfPMEIDREVmi0hTXUuQCjS-sMhuQ9bJRsI-vqZzV_L3k0_OUJ1IH3CtWXNYu0yEqKlj8Ft_S4-eVwOLBgrYeOagnvB5SAwgoQNZq7GmNUHn6yIHNRo7im-HgAU8XvKR0bXRDqFUiyB8SdeuPvTcj6Dwwd4w3Sp7kErBsGwtCCkH13VWOJ31j45ROteFB7ezfzV925X44ynBzeM9uH5DY87gkMsLCz-yfA4LMjf_1mHFGzmVS3Fc02GIIcrcyJQzVS6Nk1eXskOlLXDfw3S24NwhruclwecH6OqFusZOQyuQ-UydwHfPP_zC8TYPrIxMj4sMkcc-ghUmnnc_DJ7llFfx10DNQaHgKI6hGhjqz3f0pmPGPjAqRBdGmDiC1ekmk8GhLPG5S1Ku1-Aa8OYOSnn_nes9rViTM-Va4zXGIzSoWysgEJOOecnZtMilL14qrZT__FIHgpugmx2mlGk"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/loan/api/approve-loan?loan_id=6",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loan",
+								"api",
+								"approve-loan"
+							],
+							"query": [
+								{
+									"key": "loan_id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approved loan list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGYxYzk4ZjVjZjc4MjM4YzcyMWI1YzliOTc4MGNmMmFlMjU0NDhiMDEwYzQ4YmYxNzRkODUzZjAyNmQyMjJmOTM4MWE4ZTQ5NGQwYTc4ZWQiLCJpYXQiOiIxNjYyNTQ2OTMyLjg1NDMyNSIsIm5iZiI6IjE2NjI1NDY5MzIuODU0MzM0IiwiZXhwIjoiMTY5NDA4MjkzMi44MzQ3MTkiLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.fIRoxBT1FzneHF6W0_lSzTIGhq64OVAGS6FQwvikvk57fNbK8IAZ4u8jvWLGGdd4rVEGG-OvxGdfAOW2vt0M1LlJeIPb22cMOyQKLLsnrb4spHusS9y5XCHv5xP3Np6hk3tym-vOiQx_QTuQu1DElP7pPKrjtqY8cdDTtfXZT9lxQ8YnJ5Y539GxzECKChNGdSR75touFJIHd9oQZSEUY0XLRBfPMEIDREVmi0hTXUuQCjS-sMhuQ9bJRsI-vqZzV_L3k0_OUJ1IH3CtWXNYu0yEqKlj8Ft_S4-eVwOLBgrYeOagnvB5SAwgoQNZq7GmNUHn6yIHNRo7im-HgAU8XvKR0bXRDqFUiyB8SdeuPvTcj6Dwwd4w3Sp7kErBsGwtCCkH13VWOJ31j45ROteFB7ezfzV925X44ynBzeM9uH5DY87gkMsLCz-yfA4LMjf_1mHFGzmVS3Fc02GIIcrcyJQzVS6Nk1eXskOlLXDfw3S24NwhruclwecH6OqFusZOQyuQ-UydwHfPP_zC8TYPrIxMj4sMkcc-ghUmnnc_DJ7llFfx10DNQaHgKI6hGhjqz3f0pmPGPjAqRBdGmDiC1ekmk8GhLPG5S1Ku1-Aa8OYOSnn_nes9rViTM-Va4zXGIzSoWysgEJOOecnZtMilL14qrZT__FIHgpugmx2mlGk"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost/loan/api/approved-loan-requested-list"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

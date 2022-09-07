@@ -18,7 +18,7 @@ Setup this project you need to put the project with folder name loan in \xampp\h
 import the database which is in root directory with the name loan.sql 
 
 Change the .env configuration based on the database connection. 
-Also get the POSTMAN Collection with the name of loan.json from root directory.
+Also get the POSTMAN Collection with the name of Loan.postman_collection.json from root directory.
 Now project is ready to run.
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
